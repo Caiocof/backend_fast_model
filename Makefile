@@ -1,7 +1,10 @@
 dev_server:
-	uvicorn src.main:app --host=127.0.0.1 --port=8080 --reload
+	uvicorn src.main:app --host=127.0.0.1 --port=8080 --reload --reload-dir=src
 
-create_db:
+db_revision:
+	alembic revision --autogenerate -m $(message)
+
+db_create:
 	alembic upgrade head
 
 tests:

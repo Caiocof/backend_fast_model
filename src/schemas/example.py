@@ -1,9 +1,8 @@
 from typing import Optional
-from pydantic.dataclasses import dataclass
+from pydantic import BaseModel
 
 
-@dataclass
-class ExampleBase:
+class ExampleBase(BaseModel):
     id: int
     name: str
     description: Optional[str] = None
