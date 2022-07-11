@@ -7,5 +7,8 @@ db_revision:
 db_create:
 	alembic upgrade head
 
+db_rollback:
+	alembic downgrade -1
+
 tests:
 	pytest ./src/
