@@ -4,10 +4,8 @@ from dotenv import load_dotenv
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
+from src.settings.settings import BASE_DIR
 
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
-file = os.path.abspath(__file__)
-BASE_DIR = os.path.dirname(os.path.dirname(file))
 load_dotenv(os.path.join(BASE_DIR, '../../.env'))
 
 
@@ -29,6 +27,7 @@ Base = declarative_base()
 
 def create_db():
     Base.metadata.create_all(bind=engine)
+
 
 def get_db():
     db = SessionLocal()
