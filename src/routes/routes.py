@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
-from src.routes.example_routes import v1_example
+from src.routes.auth_routes import auth_router
 
 
 def include_routes(app: FastAPI):
-    app.include_router(v1_example)
+    app.include_router(auth_router)

@@ -5,4 +5,4 @@ __pycache__/
 .vscode/
 .env
 .pytest_cache
-alembic/versions/*
+alembic/versions/*.py

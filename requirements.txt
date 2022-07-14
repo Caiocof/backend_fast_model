@@ -38,7 +38,7 @@ pkginfo==1.7.1
 platformdirs==2.3.0
 poetry==1.1.8
 poetry-core==1.0.4
-psycopg2-binary==2.8.6
+psycopg2-binary==2.9.3
 ptyprocess==0.7.0
 pyasn1==0.4.8
 pycparser==2.20

@@ -6,7 +6,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from src.settings.settings import BASE_DIR
 
-load_dotenv(os.path.join(BASE_DIR, '../../.env'))
+load_dotenv(os.path.join(BASE_DIR, '../.env'))
 
 
 def get_db_uri():
