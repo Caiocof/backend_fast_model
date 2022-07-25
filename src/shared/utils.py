@@ -1,7 +1,7 @@
 from re import search
 from requests import get
 from validate_docbr import CNPJ, CPF, CNH, RENAVAM
-from src.schema.utils_schema import ValidateDocs
+from src.schemas.utils_schema import ValidateDocs
 
 
 class UtilService:
