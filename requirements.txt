@@ -62,6 +62,7 @@ typing_extensions==4.3.0
 urllib3==1.26.6
 uvicorn==0.18.2
 uvloop==0.16.0
+validate-docbr==1.10.0
 virtualenv==20.7.2
 virtualenv-clone==0.5.6
 watchfiles==0.15.0
